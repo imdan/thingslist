@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List of Things</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+
+    <link rel="icon" type="image/png" href="icons/sup_favicon_32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icons/sup_favicon_16x16.png" sizes="16x16" />
+    
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+           
+            <div class="col s5" id="card-1">    
+
+                <div id="main" class="card tile">
+                    <div class="card-content">
+                        <!-- <span class="card-title">Add Tasks</span> -->
+                        <div class="row">
+                            <form action="" id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Thing</label>
+                                </div>
+
+                                <input type="submit" value="Add Thing" id="add-btn" class="btn green">
+                                <a href="#" class="clear-tasks btn black" id="clear-btn">Clear Things</a>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col s7" id="card-2">
+
+                    <div class="card tile" id="tile-2">
+                        <div class="card-action">
+                            <h5 id="task-title">Things I Should Probably Be Doing</h5>
+                            <div class="input-field">
+                                <input type="text" name="filter" id="filter">
+                                <label for="filter">Filter Things</label>
+                            </div>
+                        </div>
+    
+                        <ul class="collection"></ul>
+    
+                    </div>
+    
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
